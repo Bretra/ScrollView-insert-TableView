@@ -47,7 +47,17 @@
     [self.view addSubview:self.headerView];
     _headerView.backgroundColor = [UIColor orangeColor];
     
+    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 200, 100)];
+    [btn addTarget:self action:@selector(click:) forControlEvents:UIControlEventTouchUpInside];
+    [_headerView addSubview:btn];
+    btn.backgroundColor = [UIColor redColor];
+    btn.center = _headerView.center;
+    
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(xx:) name:@"kScrollView" object:nil];
+}
+
+- (void)click:(UIButton *)btn {
+    [[[UIAlertView alloc] initWithTitle:@"click me" message:@"wa ha ha" delegate:self cancelButtonTitle:@"sure" otherButtonTitles:nil] show];
 }
 
 - (void)xx:(NSNotification *)noti {

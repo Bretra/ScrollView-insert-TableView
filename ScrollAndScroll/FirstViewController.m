@@ -10,8 +10,10 @@
 
 #import "HeaderView.h"
 
+#import "CommonTableView.h"
+
 @interface FirstViewController ()<UITableViewDelegate, UITableViewDataSource>
-@property (nonatomic, strong)UITableView *tableView;
+@property (nonatomic, strong)CommonTableView *tableView;
 @end
 
 @implementation FirstViewController
@@ -44,9 +46,9 @@
     [[NSNotificationCenter defaultCenter] postNotificationName:@"kScrollView" object:@{@"scrollOffset":@(scrollView.contentOffset),@"currentScrollViewControllerName":NSStringFromClass([self class])}];
 }
 
-- (UITableView *)tableView {
+- (CommonTableView *)tableView {
     if (!_tableView) {
-        self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+        self.tableView = [[CommonTableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
         _tableView.delegate = self;
         _tableView.dataSource = self;
     }

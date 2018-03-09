@@ -19,8 +19,8 @@
 		C18132F22052812900E89F27 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C18132F12052812900E89F27 /* SecondViewController.m */; };
 		C18132F52052813000E89F27 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C18132F42052813000E89F27 /* ThirdViewController.m */; };
 		C18132F82052869200E89F27 /* HeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C18132F72052869200E89F27 /* HeaderView.m */; };
-		C18132FB20528D0D00E89F27 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C18132FA20528D0D00E89F27 /* BaseViewController.m */; };
 		C18132FE2052912100E89F27 /* UITableView+TableViewContentSizeCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = C18132FD2052912100E89F27 /* UITableView+TableViewContentSizeCategory.m */; };
+		C181330120529B3900E89F27 /* CommonTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C181330020529B3900E89F27 /* CommonTableView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,10 +65,10 @@
 		C18132F42052813000E89F27 /* ThirdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 		C18132F62052869200E89F27 /* HeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeaderView.h; sourceTree = "<group>"; };
 		C18132F72052869200E89F27 /* HeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeaderView.m; sourceTree = "<group>"; };
-		C18132F920528D0D00E89F27 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
-		C18132FA20528D0D00E89F27 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		C18132FC2052912100E89F27 /* UITableView+TableViewContentSizeCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableView+TableViewContentSizeCategory.h"; sourceTree = "<group>"; };
 		C18132FD2052912100E89F27 /* UITableView+TableViewContentSizeCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableView+TableViewContentSizeCategory.m"; sourceTree = "<group>"; };
+		C18132FF20529B3900E89F27 /* CommonTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonTableView.h; sourceTree = "<group>"; };
+		C181330020529B3900E89F27 /* CommonTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommonTableView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,8 +123,6 @@
 				C18132BC2052807300E89F27 /* AppDelegate.m */,
 				C18132BE2052807300E89F27 /* ViewController.h */,
 				C18132BF2052807300E89F27 /* ViewController.m */,
-				C18132F920528D0D00E89F27 /* BaseViewController.h */,
-				C18132FA20528D0D00E89F27 /* BaseViewController.m */,
 				C18132ED2052812200E89F27 /* FirstViewController.h */,
 				C18132EE2052812200E89F27 /* FirstViewController.m */,
 				C18132F02052812900E89F27 /* SecondViewController.h */,
@@ -133,6 +131,8 @@
 				C18132F42052813000E89F27 /* ThirdViewController.m */,
 				C18132F62052869200E89F27 /* HeaderView.h */,
 				C18132F72052869200E89F27 /* HeaderView.m */,
+				C18132FF20529B3900E89F27 /* CommonTableView.h */,
+				C181330020529B3900E89F27 /* CommonTableView.m */,
 				C18132FC2052912100E89F27 /* UITableView+TableViewContentSizeCategory.h */,
 				C18132FD2052912100E89F27 /* UITableView+TableViewContentSizeCategory.m */,
 				C18132C12052807300E89F27 /* Main.storyboard */,
@@ -296,11 +296,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C18132F82052869200E89F27 /* HeaderView.m in Sources */,
-				C18132FB20528D0D00E89F27 /* BaseViewController.m in Sources */,
 				C18132F22052812900E89F27 /* SecondViewController.m in Sources */,
 				C18132C02052807300E89F27 /* ViewController.m in Sources */,
 				C18132F52052813000E89F27 /* ThirdViewController.m in Sources */,
 				C18132CB2052807300E89F27 /* main.m in Sources */,
+				C181330120529B3900E89F27 /* CommonTableView.m in Sources */,
 				C18132FE2052912100E89F27 /* UITableView+TableViewContentSizeCategory.m in Sources */,
 				C18132BD2052807300E89F27 /* AppDelegate.m in Sources */,
 				C18132EF2052812200E89F27 /* FirstViewController.m in Sources */,

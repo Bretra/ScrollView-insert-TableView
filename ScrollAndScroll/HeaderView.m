@@ -10,7 +10,12 @@
 
 @implementation HeaderView
 
-- (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event {
-    return NO;
+- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
+    UIView *view = [super hitTest:point withEvent:event];
+    if ([view isKindOfClass:[UIButton class]]) {
+        return view;
+    }
+    return nil;
 }
+
 @end
