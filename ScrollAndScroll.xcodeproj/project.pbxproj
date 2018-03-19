@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C15A156C205F627C00145EFD /* SegmentControllView.m in Sources */ = {isa = PBXBuildFile; fileRef = C15A156B205F627C00145EFD /* SegmentControllView.m */; };
 		C18132BD2052807300E89F27 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C18132BC2052807300E89F27 /* AppDelegate.m */; };
 		C18132C02052807300E89F27 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C18132BF2052807300E89F27 /* ViewController.m */; };
 		C18132C32052807300E89F27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C18132C12052807300E89F27 /* Main.storyboard */; };
@@ -19,7 +20,6 @@
 		C18132F22052812900E89F27 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C18132F12052812900E89F27 /* SecondViewController.m */; };
 		C18132F52052813000E89F27 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C18132F42052813000E89F27 /* ThirdViewController.m */; };
 		C18132F82052869200E89F27 /* HeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C18132F72052869200E89F27 /* HeaderView.m */; };
-		C18132FE2052912100E89F27 /* UITableView+TableViewContentSizeCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = C18132FD2052912100E89F27 /* UITableView+TableViewContentSizeCategory.m */; };
 		C181330120529B3900E89F27 /* CommonTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C181330020529B3900E89F27 /* CommonTableView.m */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C15A156A205F627C00145EFD /* SegmentControllView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SegmentControllView.h; sourceTree = "<group>"; };
+		C15A156B205F627C00145EFD /* SegmentControllView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SegmentControllView.m; sourceTree = "<group>"; };
 		C18132B82052807300E89F27 /* ScrollAndScroll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScrollAndScroll.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C18132BB2052807300E89F27 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C18132BC2052807300E89F27 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -65,8 +67,6 @@
 		C18132F42052813000E89F27 /* ThirdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 		C18132F62052869200E89F27 /* HeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeaderView.h; sourceTree = "<group>"; };
 		C18132F72052869200E89F27 /* HeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeaderView.m; sourceTree = "<group>"; };
-		C18132FC2052912100E89F27 /* UITableView+TableViewContentSizeCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableView+TableViewContentSizeCategory.h"; sourceTree = "<group>"; };
-		C18132FD2052912100E89F27 /* UITableView+TableViewContentSizeCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableView+TableViewContentSizeCategory.m"; sourceTree = "<group>"; };
 		C18132FF20529B3900E89F27 /* CommonTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonTableView.h; sourceTree = "<group>"; };
 		C181330020529B3900E89F27 /* CommonTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommonTableView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -133,8 +133,8 @@
 				C18132F72052869200E89F27 /* HeaderView.m */,
 				C18132FF20529B3900E89F27 /* CommonTableView.h */,
 				C181330020529B3900E89F27 /* CommonTableView.m */,
-				C18132FC2052912100E89F27 /* UITableView+TableViewContentSizeCategory.h */,
-				C18132FD2052912100E89F27 /* UITableView+TableViewContentSizeCategory.m */,
+				C15A156A205F627C00145EFD /* SegmentControllView.h */,
+				C15A156B205F627C00145EFD /* SegmentControllView.m */,
 				C18132C12052807300E89F27 /* Main.storyboard */,
 				C18132C42052807300E89F27 /* Assets.xcassets */,
 				C18132C62052807300E89F27 /* LaunchScreen.storyboard */,
@@ -229,7 +229,7 @@
 				TargetAttributes = {
 					C18132B72052807300E89F27 = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 					C18132CF2052807300E89F27 = {
 						CreatedOnToolsVersion = 9.2;
@@ -300,8 +300,8 @@
 				C18132C02052807300E89F27 /* ViewController.m in Sources */,
 				C18132F52052813000E89F27 /* ThirdViewController.m in Sources */,
 				C18132CB2052807300E89F27 /* main.m in Sources */,
+				C15A156C205F627C00145EFD /* SegmentControllView.m in Sources */,
 				C181330120529B3900E89F27 /* CommonTableView.m in Sources */,
-				C18132FE2052912100E89F27 /* UITableView+TableViewContentSizeCategory.m in Sources */,
 				C18132BD2052807300E89F27 /* AppDelegate.m in Sources */,
 				C18132EF2052812200E89F27 /* FirstViewController.m in Sources */,
 			);
@@ -467,15 +467,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Kai Wang (8749MQZRYU)";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 8XUGMTF84M;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N4YP9F2FQJ;
 				INFOPLIST_FILE = ScrollAndScroll/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.QuanWai.WanZhu;
+				PRODUCT_BUNDLE_IDENTIFIER = com.edobee.mandou;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "edaa69ee-238d-41eb-8e1c-cc85e509da3a";
-				PROVISIONING_PROFILE_SPECIFIER = "iOS QuanWai Development";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -485,15 +486,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Kai Wang (8749MQZRYU)";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 8XUGMTF84M;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N4YP9F2FQJ;
 				INFOPLIST_FILE = ScrollAndScroll/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.QuanWai.WanZhu;
+				PRODUCT_BUNDLE_IDENTIFIER = com.edobee.mandou;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "edaa69ee-238d-41eb-8e1c-cc85e509da3a";
-				PROVISIONING_PROFILE_SPECIFIER = "iOS QuanWai Development";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

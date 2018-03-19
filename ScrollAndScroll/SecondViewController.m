@@ -21,7 +21,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self.view addSubview:self.tableView];
-    UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 300)];
+    UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 350)];
     self.tableView.tableHeaderView = headerView;
 }
 
@@ -47,7 +47,7 @@
 
 - (void)viewDidLayoutSubviews {
     [super viewDidLayoutSubviews];
-    if (self.tableView.contentSize.height < 300 + [UIScreen mainScreen].bounds.size.height) {
+    if (self.tableView.contentSize.height < 350 + [UIScreen mainScreen].bounds.size.height) {
         self.tableView.contentInset = UIEdgeInsetsMake(0, 0, [UIScreen mainScreen].bounds.size.height, 0);
     }
 }

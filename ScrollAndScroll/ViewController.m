@@ -12,13 +12,15 @@
 #import "ThirdViewController.h"
 
 #import "HeaderView.h"
+#import "SegmentControllView.h"
 
 #define KW [UIScreen mainScreen].bounds.size.width
 #define KH [UIScreen mainScreen].bounds.size.height
 
-@interface ViewController ()
+@interface ViewController ()<UIScrollViewDelegate>
 @property (nonatomic, strong) UIScrollView *scrollView;
 @property (nonatomic, strong) HeaderView *headerView;
+@property (nonatomic, strong) SegmentControllView *segmentControll;
 @end
 
 @implementation ViewController
@@ -52,7 +54,14 @@
     [_headerView addSubview:btn];
     btn.backgroundColor = [UIColor redColor];
     btn.center = _headerView.center;
-    
+    self.segmentControll = [[SegmentControllView alloc] initWithFrame:CGRectMake(0, 300, [UIScreen mainScreen].bounds.size.width, 50)];
+    _segmentControll.backgroundColor = [UIColor purpleColor];
+    [self.view addSubview:self.segmentControll];
+    [_segmentControll setSegmentControlEvent:0];
+    __weak ViewController *weakSelf = self;
+    _segmentControll.clickIndexBlock = ^(NSInteger index) {
+        [weakSelf.scrollView setContentOffset:CGPointMake([UIScreen mainScreen].bounds.size.width * index, 0) animated:NO];
+    };
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(xx:) name:@"kScrollView" object:nil];
 }
 
@@ -79,6 +88,10 @@
     headerFrame.origin.y = -yMargin;
     _headerView.frame = headerFrame;
     
+    CGRect rect = _segmentControll.frame;
+    rect.origin.y = 300 - yMargin;
+    _segmentControll.frame = rect;
+    
     //设置其他vc scrollview的偏移量
     [self subchildViewControllersWithIndex:index andCurrentScrollOffsetY:yMargin];
     
@@ -97,11 +110,17 @@
     return [array copy];
 }
 
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    NSInteger scrollIndex = scrollView.contentOffset.x / [UIScreen mainScreen].bounds.size.width;
+    [_segmentControll setSegmentControlEvent:scrollIndex];
+}
+
 - (UIScrollView *)scrollView {
     if (!_scrollView) {
         self.scrollView = [[UIScrollView alloc] initWithFrame:self.view.bounds];
         _scrollView.contentSize = CGSizeMake(KW * 3, KH);
         _scrollView.pagingEnabled = YES;
+        _scrollView.delegate = self;
     }
     return _scrollView;
 }
